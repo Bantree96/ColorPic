@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31624.102
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ColorPic", "ColorPic.csproj", "{6E453F9A-1CD2-41B3-965A-281F13168A42}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6E453F9A-1CD2-41B3-965A-281F13168A42}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E453F9A-1CD2-41B3-965A-281F13168A42}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E453F9A-1CD2-41B3-965A-281F13168A42}.Debug|x64.ActiveCfg = Debug|x64
+		{6E453F9A-1CD2-41B3-965A-281F13168A42}.Debug|x64.Build.0 = Debug|x64
+		{6E453F9A-1CD2-41B3-965A-281F13168A42}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E453F9A-1CD2-41B3-965A-281F13168A42}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6E453F9A-1CD2-41B3-965A-281F13168A42}.Release|x64.ActiveCfg = Release|x64
+		{6E453F9A-1CD2-41B3-965A-281F13168A42}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2080FC25-3360-41A2-A1FC-2376DC55148B}
+	EndGlobalSection
+EndGlobal
