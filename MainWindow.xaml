@@ -5,32 +5,30 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ColorPic"
         mc:Ignorable="d"
-        Title="ColorPic" Height="200" Width="270" ForceCursor="True" Topmost="True" >
+        Title="ColorPic" Height="300" Width="200" ForceCursor="True" Topmost="True" >
     <Grid>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition/>
-            <ColumnDefinition/>
-        </Grid.ColumnDefinitions>
-
         <Grid.RowDefinitions>
-            <RowDefinition Height="120"/>
+            <RowDefinition/>
             <RowDefinition/>
         </Grid.RowDefinitions>
 
-        <Grid Grid.Column="0">
-            <Rectangle Fill="#FFF4F4F5" Stroke="Black" Margin="10" Width="100" Height="100"/>
-        </Grid>
-
-        <Grid Grid.Column="1">
-            <Rectangle Fill="{Binding ChoiceColor}" Margin="10" Stroke="Black" Height="100" Width="100"/>
+        <!-- 현재 화면(돋보기) -->
+        <Grid Grid.Row="0" Margin="10">
+            <Image Source="{Binding ZoomImage}"/>
         </Grid>
         
-        <Grid Grid.Row="1" Grid.RowSpan="2">
-            <StackPanel>
-                <Label Content="{Binding MouseX}" />
-                <Label Content="{Binding MouseY}" />
-                <Label Content="B : " />
+        <StackPanel Grid.Row="1" Margin="10 0 10 10">
+            <!-- 현재 색 -->
+            <StackPanel Orientation="Horizontal" VerticalAlignment="Top">
+                <Label Content="현재 색" Width="70"/>
+                <Rectangle Width="100" Height="20" Fill="{Binding ChoiceColor}" Stroke="Black"/>
             </StackPanel>
-        </Grid>
+            <Label Content="#000000"/>
+            
+            <StackPanel Orientation="Horizontal" VerticalAlignment="Top">
+                <Label Content="코드 형식" Width="70"/>
+                <Rectangle Width="100" Height="20" Fill="AliceBlue" Stroke="Black"/>
+            </StackPanel>
+        </StackPanel>
     </Grid>
 </Window>
